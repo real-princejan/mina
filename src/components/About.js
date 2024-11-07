@@ -6,6 +6,11 @@ const About = () => {
   return (
     <section className="py-16">
       {/* Container */}
+      <Link to='/'
+        className="absolute top-8 right-8 font-medium text-[#BC343E] underline py-2 px-4  hover:text-black transition-all duration-300"
+      >
+        Home
+      </Link>
       <div className="mx-auto w-full max-w-7xl px-6 md:px-10 lg:px-12">
         {/* Grid Layout */}
         <div className="grid gap-12 sm:gap-16 lg:grid-cols-2 items-center">
