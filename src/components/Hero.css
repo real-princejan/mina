@@ -1,0 +1,52 @@
+/* Hero.css */
+
+.japanese-wave-animation {
+    animation: japaneseWave 5s ease-in-out infinite;
+    transform-origin: center;
+  }
+  
+  @keyframes japaneseWave {
+    0%, 100% {
+      transform: scale(1) translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    25% {
+      transform: scale(1.05) translateY(-5px) rotate(-1deg);
+      opacity: 0.9;
+    }
+    50% {
+      transform: scale(1.1) translateY(0) rotate(1deg);
+      opacity: 1;
+    }
+    75% {
+      transform: scale(1.05) translateY(5px) rotate(-1deg);
+      opacity: 0.9;
+    }
+  }
+  
+  .japanese-text-animation {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .japanese-text-animation p {
+    animation: japaneseReveal 1s ease forwards;
+    transform-origin: bottom;
+    opacity: 0; /* Start hidden */
+  }
+  
+  @keyframes japaneseReveal {
+    0% {
+      transform: scaleY(0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: scaleY(1);
+      opacity: 1; /* Fully visible */
+    }
+  }
+  
